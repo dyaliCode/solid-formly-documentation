@@ -1,0 +1,9 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.invalid-feedback {
+  color: rgb(243, 100, 100);
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
