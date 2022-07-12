@@ -4,7 +4,7 @@ const Aside: Component = () => {
   return (
     <aside>
       <nav class="closed-on-mobile">
-        <a href="./" class="secondary" id="toggle-docs-navigation">
+        <a href="#secondary" id="toggle-docs-navigation">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="expand"
@@ -33,167 +33,94 @@ const Aside: Component = () => {
           </svg>
           Table of content
         </a>
+
         <details open={true}>
-          <summary>Getting started</summary>
+          <summary>Guide</summary>
           <ul>
             <li>
-              <a
-                href="./"
-                id="start-link"
-                class="secondary"
-                aria-current="page"
-              >
-                Introduction
+              <a href="#start-link" class="secondary" aria-current="page">
+                Getting started
               </a>
             </li>
             <li>
-              <a href="./" id="start-link" class="secondary">
-                Usage
+              <a href="#" class="secondary">
+                Validation
               </a>
             </li>
             <li>
-              <a href="./themes.html" id="themes-link" class="secondary">
-                Themes
+              <a href="#" class="secondary">
+                Preprocess
               </a>
             </li>
             <li>
-              <a
-                href="./customization.html"
-                id="customization-link"
-                class="secondary"
-              >
-                Customization
-              </a>
-            </li>
-            <li>
-              <a href="./classless.html" id="classless-link" class="secondary">
-                Class-less version
-              </a>
-            </li>
-            <li>
-              <a href="./rtl.html" id="rtl-link" class="secondary">
-                RTL
+              <a href="#" class="secondary">
+                Theme
               </a>
             </li>
           </ul>
         </details>
-        <details>
-          <summary>Layout</summary>
-          <ul>
-            <li>
-              <a
-                href="./containers.html"
-                id="containers-link"
-                class="secondary"
-              >
-                Containers
-              </a>
-            </li>
-            <li>
-              <a href="./grid.html" id="grid-link" class="secondary">
-                Grid
-              </a>
-            </li>
-            <li>
-              <a href="./scroller.html" id="scroller-link" class="secondary">
-                Horizontal scroller
-              </a>
-            </li>
-          </ul>
-        </details>
-        <details>
-          <summary>Elements</summary>
-          <ul>
-            <li>
-              <a
-                href="./typography.html"
-                id="typography-link"
-                class="secondary"
-              >
-                Typography
-              </a>
-            </li>
-            <li>
-              <a href="./buttons.html" id="buttons-link" class="secondary">
-                Buttons
-              </a>
-            </li>
-            <li>
-              <a href="./forms.html" id="forms-link" class="secondary">
-                Forms
-              </a>
-            </li>
-            <li>
-              <a href="./tables.html" id="tables-link" class="secondary">
-                Tables
-              </a>
-            </li>
-          </ul>
-        </details>
-        <details>
+
+        <details open={false}>
           <summary>Components</summary>
           <ul>
             <li>
-              <a
-                href="./accordions.html"
-                id="accordions-link"
-                class="secondary"
-              >
-                Accordions
+              <a href="#" class="secondary">
+                Text
               </a>
             </li>
             <li>
-              <a href="./cards.html" id="cards-link" class="secondary">
-                Cards
+              <a href="#" class="secondary">
+                Password
               </a>
             </li>
             <li>
-              <a href="./dropdowns.html" id="dropdowns-link" class="secondary">
-                Dropdowns
+              <a href="#" class="secondary">
+                Email
               </a>
             </li>
             <li>
-              <a href="./modal.html" id="modal-link" class="secondary">
-                Modal
+              <a href="#" class="secondary">
+                Number
               </a>
             </li>
             <li>
-              <a href="./navs.html" id="navs-link" class="secondary">
-                Navs
+              <a href="#" class="secondary">
+                Telephone
               </a>
             </li>
             <li>
-              <a href="./progress.html" id="progress-link" class="secondary">
-                Progress
-              </a>
-            </li>
-          </ul>
-        </details>
-        <details>
-          <summary>Utilities</summary>
-          <ul>
-            <li>
-              <a href="./loading.html" id="loading-link" class="secondary">
-                Loading
+              <a href="#" class="secondary">
+                Textarea
               </a>
             </li>
             <li>
-              <a href="./tooltips.html" id="tooltips-link" class="secondary">
-                Tooltips
+              <a href="#" class="secondary">
+                Select
               </a>
             </li>
-          </ul>
-        </details>
-        <details>
-          <summary>Extend</summary>
-          <ul>
             <li>
-              <a
-                href="./we-love-classes.html"
-                id="we-love-classes-link"
-                class="secondary"
-              >
-                We love .classes
+              <a href="#" class="secondary">
+                Checkbox
+              </a>
+            </li>
+            <li>
+              <a href="#" class="secondary">
+                Radio
+              </a>
+            </li>
+            <li>
+              <a href="#" class="secondary">
+                Autocomplete
+              </a>
+            </li>
+            <li>
+              <a href="#" class="secondary">
+                File
+              </a>
+            </li>
+            <li>
+              <a href="#" class="secondary">
+                Range
               </a>
             </li>
           </ul>

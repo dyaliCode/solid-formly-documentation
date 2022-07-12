@@ -3,10 +3,10 @@ import { Links, Meta, Routes, Scripts } from "solid-start/root";
 import { ErrorBoundary } from "solid-start/error-boundary";
 import { createEffect, Suspense } from "solid-js";
 
-import "@picocss/pico/css/pico.css";
-import "@picocss/pico/docs/css/pico.docs.css";
-import "prismjs/themes/prism-solarizedlight.css";
-import "./index.css";
+import "@picocss/pico/scss/pico.scss";
+import "@picocss/pico/docs/scss/pico.docs.scss";
+import "prismjs/themes/prism.css";
+import "./index.scss";
 
 export default function Root() {
   createEffect(() => {
