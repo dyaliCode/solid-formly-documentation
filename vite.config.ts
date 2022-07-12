@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import solid from "solid-start";
 // import mdx from "@mdx-js/rollup";
 import remarkGfm from "remark-gfm";
+import vercel from "solid-start-vercel";
 
 export default defineConfig({
   plugins: [
@@ -16,6 +17,7 @@ export default defineConfig({
     },
     solid({
       extensions: [".mdx", ".md"],
+      adapter: vercel(),
     }),
     // solid(),
   ],
