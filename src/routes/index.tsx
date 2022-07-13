@@ -1,4 +1,3 @@
-import { IField } from "solid-formly";
 import Aside from "~/components/Partials/Aside";
 import Header from "~/components/Partials/header";
 import Example from "~/components/Doc/Usage";

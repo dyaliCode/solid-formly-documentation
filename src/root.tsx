@@ -1,23 +1,20 @@
 // @refresh reload
 import { Links, Meta, Routes, Scripts } from "solid-start/root";
 import { ErrorBoundary } from "solid-start/error-boundary";
-import { createEffect, Suspense } from "solid-js";
+import { Suspense } from "solid-js";
+import createThemeMode from "~/utils/stores";
 
 import "@picocss/pico/scss/pico.scss";
 import "@picocss/pico/docs/scss/pico.docs.scss";
-import "prismjs/themes/prism.css";
+import "prismjs/themes/prism-solarizedlight.css";
+
 import "./index.scss";
 
 export default function Root() {
-  createEffect(() => {
-    // if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    //   document.documentElement.setAttribute("data-theme", "dark");
-    // } else {
-    //   document.documentElement.setAttribute("data-theme", "light");
-    // }
-  });
+  const { mode } = createThemeMode;
+
   return (
-    <html lang="en" data-theme="light">
+    <html lang="en" data-theme={mode()}>
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
