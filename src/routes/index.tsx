@@ -14,7 +14,7 @@ export default function Home() {
         <div role="document">
           <section>
             <hgroup>
-              <h1>Introduction</h1>
+              <h1>Getting started</h1>
               <h2>
                 With <u>Solid Formly</u> you can generate a dynamic forms with
                 custom rules and styles for application's{" "}
