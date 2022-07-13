@@ -8,7 +8,7 @@ const Header: Component = () => {
     <nav class="container-fluid">
       <ul>
         <li>
-          <a href="https://picocss.com" aria-label="Back home">
+          <a href="/" aria-label="Back home">
             <img
               class="logo"
               src="https://www.solidjs.com/assets/logo.123b04bc.svg"
