@@ -32,6 +32,6 @@
     "highlight.js": "^11.5.1",
     "js-cookie": "^3.0.1",
     "prismjs": "^1.28.0",
-    "solid-formly": "^0.0.8"
+    "solid-formly": "^0.0.9"
   }
 }
