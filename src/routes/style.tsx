@@ -137,8 +137,8 @@ export default function Style() {
             <hgroup>
               <h1>Style</h1>
               <h2>
-                <u>Solid Formly</u> is not depent to specifie astomic CSS, so
-                you can integrate any libraries.
+                <u>Solid Formly</u> is not depent to specifie atomic CSS, so you
+                can integrate any libraries.
               </h2>
             </hgroup>
           </section>
@@ -149,7 +149,7 @@ export default function Style() {
               <Code code={code_boostrap} />
             </article>
             <article>
-              <header>TailwindCss</header>
+              <header>Tailwind</header>
               <Code code={code_tailwind} />
             </article>
           </section>

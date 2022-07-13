@@ -15,8 +15,7 @@ export default function Advance() {
             <hgroup>
               <h1>Advance</h1>
               <h2>
-                <u>Solid Formly</u> give you a core rules or customize your own
-                for validation a form 💯.
+                <u>Solid Formly</u>.
               </h2>
             </hgroup>
           </section>
