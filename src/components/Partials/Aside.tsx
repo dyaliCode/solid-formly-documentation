@@ -1,3 +1,4 @@
+import { NavLink } from "solid-app-router";
 import { Component } from "solid-js";
 
 const Aside: Component = () => {
@@ -38,24 +39,24 @@ const Aside: Component = () => {
           <summary>Guide</summary>
           <ul>
             <li>
-              <a href="#start-link" class="secondary" aria-current="page">
+              <NavLink href="/" class="secondary">
                 Getting started
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/validation" class="secondary">
                 Validation
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
-                Preprocess
-              </a>
+              <NavLink href="/advance" class="secondary">
+                Advance
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
-                Theme
-              </a>
+              <NavLink href="/style" class="secondary">
+                Style
+              </NavLink>
             </li>
           </ul>
         </details>

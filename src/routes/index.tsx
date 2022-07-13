@@ -1,6 +1,6 @@
 import Aside from "~/components/Partials/Aside";
 import Header from "~/components/Partials/header";
-import Example from "~/components/Doc/Usage";
+import Usage from "~/components/Doc/Usage";
 
 export default function Home() {
   return (
@@ -42,7 +42,7 @@ export default function Home() {
             </p>
           </section>
 
-          <Example />
+          <Usage />
         </div>
       </main>
       {/* End main */}
