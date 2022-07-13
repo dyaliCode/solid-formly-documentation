@@ -31,7 +31,7 @@ const fields: IField[] = [
       type: "password",
       id: "password",
       classes: ["form-control"],
-      placeholder: "Tap your first name",
+      placeholder: "Tap your password",
     },
     rules: ["required", "min:6", "max:10"],
     messages: {

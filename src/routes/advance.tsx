@@ -1,6 +1,7 @@
-import Code from "~/components/Doc/Code";
 import Aside from "~/components/Partials/Aside";
 import Header from "~/components/Partials/header";
+import Alter from "~/components/Doc/Advance/Alter/index";
+import Preprocess from "~/components/Doc/Advance/Preprocess";
 
 export default function Advance() {
   return (
@@ -15,10 +16,15 @@ export default function Advance() {
             <hgroup>
               <h1>Advance</h1>
               <h2>
-                <u>Solid Formly</u>.
+                <i>
+                  You can easly get a form more reactive using hook preprocess.
+                </i>
               </h2>
             </hgroup>
           </section>
+
+          <Alter />
+          <Preprocess />
         </div>
       </main>
       {/* End main */}
