@@ -32,7 +32,7 @@ const Textarea: Component = () => {
         id: "id-field-textarea", // optional
         classes: ["form-control"], // optional
         label: "Label field textarea", // optional
-        placeholder: "Placeholder field tel", // optional
+        placeholder: "Placeholder field textarea", // optional
         disabled: false, // optional
         readonly: false, // optional
         rows: 14, // optional
