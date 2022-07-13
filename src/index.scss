@@ -28,7 +28,7 @@ section {
 
 aside {
   details {
-    margin-bottom: calc(var(--spacing) * 2);
+    margin-bottom: calc(var(--spacing) * 1.5);
 
     summary {
       font-weight: bold !important;
@@ -36,8 +36,18 @@ aside {
 
     ul {
       li {
-        margin-top: calc(var(--spacing));
+        margin-top: calc(var(--spacing) * 0.2);
       }
     }
   }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+input[type="checkbox"] {
+  margin-left: calc(var(--spacing) * 1);
 }

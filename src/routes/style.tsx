@@ -1,6 +1,5 @@
+import LayoutMain from "~/components/Layouts/LayoutMain";
 import Code from "~/components/Doc/Code";
-import Aside from "~/components/Partials/Aside";
-import Header from "~/components/Partials/header";
 
 const code_boostrap = `const fields: IField[] = [
   {
@@ -126,36 +125,29 @@ const code_tailwind = `const fields: IField[] = [
 
 export default function Style() {
   return (
-    <>
-      <Header />
-      {/* Start main */}
-      <main class="container" id="docs">
-        <Aside />
+    <LayoutMain>
+      <section>
+        <hgroup>
+          <h1>Style</h1>
+          <h2>
+            <i>
+              <u>Solid Formly</u> is not depent to specifie atomic CSS, so you
+              can integrate any libraries.
+            </i>
+          </h2>
+        </hgroup>
+      </section>
 
-        <div role="document">
-          <section>
-            <hgroup>
-              <h1>Style</h1>
-              <h2>
-                <u>Solid Formly</u> is not depent to specifie atomic CSS, so you
-                can integrate any libraries.
-              </h2>
-            </hgroup>
-          </section>
-
-          <section>
-            <article>
-              <header>Boostrap</header>
-              <Code code={code_boostrap} />
-            </article>
-            <article>
-              <header>Tailwind</header>
-              <Code code={code_tailwind} />
-            </article>
-          </section>
-        </div>
-      </main>
-      {/* End main */}
-    </>
+      <section>
+        <article>
+          <header>Boostrap</header>
+          <Code code={code_boostrap} />
+        </article>
+        <article>
+          <header>Tailwind</header>
+          <Code code={code_tailwind} />
+        </article>
+      </section>
+    </LayoutMain>
   );
 }

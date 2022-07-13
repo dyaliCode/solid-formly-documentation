@@ -49,11 +49,6 @@ const Aside: Component = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink href="/advance" class="secondary">
-                Advance
-              </NavLink>
-            </li>
-            <li>
               <NavLink href="/style" class="secondary">
                 Style
               </NavLink>
@@ -61,68 +56,84 @@ const Aside: Component = () => {
           </ul>
         </details>
 
-        <details open={false}>
+        <details open={true}>
+          <summary>Advanced</summary>
+          <ul>
+            <li>
+              <NavLink href="/advanced/alter" class="secondary">
+                Alter
+              </NavLink>
+            </li>
+            <li>
+              <NavLink href="/advanced/custom-validation" class="secondary">
+                Custom Validation
+              </NavLink>
+            </li>
+            <li>
+              <NavLink href="/advanced/preprocess" class="secondary">
+                Preprocess
+              </NavLink>
+            </li>
+          </ul>
+        </details>
+
+        <details open={true}>
           <summary>Components</summary>
           <ul>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/text" class="secondary">
                 Text
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/password" class="secondary">
                 Password
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/email" class="secondary">
                 Email
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/number" class="secondary">
                 Number
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/telephone" class="secondary">
                 Telephone
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/textarea" class="secondary">
                 Textarea
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/select" class="secondary">
                 Select
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/checkbox" class="secondary">
                 Checkbox
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/radio" class="secondary">
                 Radio
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
-                Autocomplete
-              </a>
-            </li>
-            <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/file" class="secondary">
                 File
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" class="secondary">
+              <NavLink href="/components/Range" class="secondary">
                 Range
-              </a>
+              </NavLink>
             </li>
           </ul>
         </details>

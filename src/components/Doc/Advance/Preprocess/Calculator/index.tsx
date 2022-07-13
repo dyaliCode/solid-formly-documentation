@@ -99,7 +99,11 @@ const fields: IField[] = [
 const Example: Component = () => {
   return (
     <>
-      <strong>1- calculator example</strong>
+      <p>
+        <code>
+          <b>1- calculator example</b>
+        </code>
+      </p>
       <article>
         <Form fields={fields} form_name="formly_calculator" />
       </article>

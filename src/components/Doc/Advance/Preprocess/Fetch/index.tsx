@@ -162,6 +162,19 @@ const Example: Component = () => {
       <article>
         <p>
           <code>
+            <b>1- fetch api example</b>
+          </code>
+        </p>
+        <p>
+          <small>
+            <i>
+              here <u>solid-formly</u> fetch data type from jsonplaceholder by
+              value category
+            </i>
+          </small>
+        </p>
+        <p>
+          <code>
             <i>fetch: </i>
             <u>{loading() ? "loading..." : "done!"}</u>
           </code>
