@@ -47,24 +47,13 @@ const Code: Component<IProps> = (props: IProps) => {
       </a>
       <pre>
         <code class="javascript">
-          {/* <div
+          <div
             innerHTML={Prism.highlight(
               props.code,
               Prism.languages.javascript,
               "language-tsx"
             )}
-          ></div> */}
-          <pre class="language-tsx">
-            <code class="language-tsx">
-              <div
-                innerHTML={Prism.highlight(
-                  props.code,
-                  Prism.languages["javascript"],
-                  "javascript"
-                )}
-              ></div>
-            </code>
-          </pre>
+          ></div>
         </code>
       </pre>
     </div>
