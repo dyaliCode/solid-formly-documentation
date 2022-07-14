@@ -1,6 +1,6 @@
-import { Component } from "solid-js";
+import { Component, lazy } from "solid-js";
 import Prism from "prismjs";
-
+import PrismJsx from "prismjs/components/prism-jsx.min";
 // import styles from "./Code.module.scss";
 
 type IProps = {
@@ -47,13 +47,24 @@ const Code: Component<IProps> = (props: IProps) => {
       </a>
       <pre>
         <code class="javascript">
-          <div
+          {/* <div
             innerHTML={Prism.highlight(
               props.code,
               Prism.languages.javascript,
-              "javascript"
+              "language-tsx"
             )}
-          ></div>
+          ></div> */}
+          <pre class="language-tsx">
+            <code class="language-tsx">
+              <div
+                innerHTML={Prism.highlight(
+                  props.code,
+                  Prism.languages["javascript"],
+                  "javascript"
+                )}
+              ></div>
+            </code>
+          </pre>
         </code>
       </pre>
     </div>

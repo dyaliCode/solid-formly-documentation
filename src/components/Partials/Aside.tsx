@@ -65,6 +65,11 @@ const Aside: Component = () => {
               </NavLink>
             </li>
             <li>
+              <NavLink href="/advanced/multiple-forms" class="secondary">
+                Multiple Forms
+              </NavLink>
+            </li>
+            <li>
               <NavLink href="/advanced/custom-validation" class="secondary">
                 Custom Validation
               </NavLink>
