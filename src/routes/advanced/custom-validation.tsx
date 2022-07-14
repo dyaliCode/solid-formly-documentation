@@ -1,4 +1,7 @@
-import { getValues, IField } from "solid-formly";
+import {
+  getValues,
+  IField,
+} from "/mnt/E656FADC56FAAC85/Projects/SolidJs/packages/solid-formly/src";
 import { Component } from "solid-js";
 import Code from "~/components/Doc/Code";
 import Form from "~/components/Doc/Form";
@@ -9,13 +12,13 @@ const code = `const Form: Component = () => {
 
   const correctName = async (): Promise<boolean> => {
     const values = await getValues(form_name);
-
     if (values) {
       if (values.myname != "i am solidjs") {
         return false;
       }
+      return true;
     }
-    return true;
+    return false;
   };
 
   const onSubmit = (data: IValue) => {
@@ -52,17 +55,17 @@ export default Form;
 `;
 
 const CustomValidation: Component = () => {
-  const form_name = "formly_checkbox";
+  const form_name = "custom_validation";
 
   const correctName = async (): Promise<boolean> => {
     const values = await getValues(form_name);
-
     if (values) {
       if (values.myname != "i am solidjs") {
         return false;
       }
+      return true;
     }
-    return true;
+    return false;
   };
 
   const fields: IField[] = [

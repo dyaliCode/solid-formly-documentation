@@ -51,7 +51,7 @@ const Code: Component<IProps> = (props: IProps) => {
             innerHTML={Prism.highlight(
               props.code,
               Prism.languages.javascript,
-              "language-tsx"
+              "javascript"
             )}
           ></div>
         </code>

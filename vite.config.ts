@@ -7,7 +7,6 @@ export default defineConfig({
     solid({
       adapter: vercel(),
     }),
-    // solid(),
   ],
   ssr: {
     noExternal: ["solid-formly"],
@@ -15,5 +14,6 @@ export default defineConfig({
   build: {
     target: "esnext",
     polyfillDynamicImport: false,
+    outDir: "dist",
   },
 });
