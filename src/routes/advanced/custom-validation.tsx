@@ -1,7 +1,4 @@
-import {
-  getValues,
-  IField,
-} from "/mnt/E656FADC56FAAC85/Projects/SolidJs/packages/solid-formly/src";
+import { getValues, IField } from "solid-formly";
 import { Component } from "solid-js";
 import Code from "~/components/Doc/Code";
 import Form from "~/components/Doc/Form";
