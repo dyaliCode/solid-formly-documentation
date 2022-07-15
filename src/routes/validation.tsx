@@ -1,7 +1,7 @@
 import Code from "~/components/Doc/Code";
 import LayoutMain from "~/components/Layouts/LayoutMain";
 import Aside from "~/components/Partials/Aside";
-import Header from "~/components/Partials/header";
+import Header from "~/components/Partials/Header";
 
 const code_core_rules = `const fields = [{
   ...,

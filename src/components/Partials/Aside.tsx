@@ -39,7 +39,7 @@ const Aside: Component = () => {
           <summary>Guide</summary>
           <ul>
             <li>
-              <NavLink href="/" class="secondary">
+              <NavLink href="/getting-started" class="secondary">
                 Getting started
               </NavLink>
             </li>

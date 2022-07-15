@@ -14,12 +14,6 @@ const Code: Component<IProps> = (props: IProps) => {
         href="#"
         class="secondary code-copy"
         aria-label="copy"
-        style={`position: absolute;
-        right: 10px;
-        top: 10px;
-        border: solid 1px #ddd;
-        padding: 5px;
-        border-radius: 4px;`}
         onClick={async (e) => {
           e.preventDefault();
           if ("clipboard" in navigator) {

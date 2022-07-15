@@ -1,14 +1,5 @@
 @import url(./_variables.scss);
 
-@media (min-width: 1200px) {
-  body > header,
-  body > main,
-  body > footer,
-  section {
-    --block-spacing-vertical: calc(var(--spacing) * 2);
-  }
-}
-
 body > nav ul:first-of-type li:nth-of-type(2) {
   margin-left: calc(var(--spacing) * 1);
   margin-right: calc(var(--spacing) * 1);
@@ -52,4 +43,45 @@ aside {
 
 input[type="checkbox"] {
   margin-left: calc(var(--spacing) * 1);
+}
+
+a.code-copy {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0px 6px 0 rgb(0 0 0 / 20%), 0 3px 5px 0 rgb(0 0 0 / 19%) !important;
+}
+
+header.intro {
+  padding: 150px 0 0 0;
+  text-align: center;
+  h1,
+  p {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    --font-weight: 800;
+    margin-bottom: var(--spacing);
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.intro {
+    h1 {
+      --font-size: 3rem;
+    }
+  }
+}
+
+section.advantage {
+  text-align: center;
+  article {
+    margin: 0;
+    font-size: 0.75rem;
+  }
 }

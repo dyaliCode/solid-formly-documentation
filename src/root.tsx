@@ -18,6 +18,18 @@ export default function Root() {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
+
+        <meta property="og:title" content="Solid Formly" />
+        <meta property="og:type" content="documentation" />
+        <meta
+          property="og:url"
+          content="https://solid-formly-documentation.vercel.app/"
+        />
+        <meta
+          property="og:image"
+          content="https://assets.solidjs.com/banner?project=Formly&type=package"
+        />
+
         <Links />
         <link
           rel="stylesheet"

@@ -1,5 +1,5 @@
 import { ParentComponent } from "solid-js";
-import Header from "../Partials/header";
+import Header from "../Partials/Header";
 import Aside from "../Partials/Aside";
 
 const LayoutMain: ParentComponent<{}> = (props) => {

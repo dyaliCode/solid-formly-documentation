@@ -1,3 +1,4 @@
+import { NavLink } from "solid-app-router";
 import { Component } from "solid-js";
 import createThemeMode from "~/utils/stores";
 
@@ -8,7 +9,7 @@ const Header: Component = () => {
     <nav class="container-fluid">
       <ul>
         <li>
-          <a href="/" aria-label="Back home">
+          <NavLink href="/" aria-label="Home">
             <img
               class="logo"
               src="https://www.solidjs.com/assets/logo.123b04bc.svg"
@@ -16,9 +17,13 @@ const Header: Component = () => {
               height={80}
               alt="solidjs"
             />
-          </a>
+          </NavLink>
         </li>
-        <li>Formly</li>
+        <li>
+          <NavLink href="/" aria-label="Home">
+            Formly
+          </NavLink>
+        </li>
       </ul>
       <ul>
         <li>
