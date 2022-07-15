@@ -5,36 +5,35 @@ import Form from "~/components/Doc/Form";
 import LayoutMain from "~/components/Layouts/LayoutMain";
 
 const code = `const Form: Component = () => {
-  const form_name = "formly_custom_validation";
+  const form_name = "custom_validation";
 
-  const correctName = async (): Promise<boolean> => {
-    const values = await getValues(form_name);
+  async function correctName() {
+    const values = getValues(form_name);
     if (values) {
-      if (values.myname != "i am solidjs") {
+      if (values.myname != "hey i am solidjs") {
         return false;
       }
       return true;
     }
     return false;
-  };
-
-  const onSubmit = (data: IValue) => {
-    console.log(data);
-  };
+  }
 
   const fields: IField[] = [
     {
-      type: "input", // required
-      name: "myname", // required
+      type: "input",
+      name: "myname",
       attributes: {
-        type: "text", // default = text, or password, email, number, tel, optional
-        id: "myname", // optional
-        label: "Name", // optional
+        type: "text",
+        id: "myname",
+        label: "Name",
         placeholder: "Tap i am solidjs", // optional
       },
-      rules: ["required", correctName],
+      rules: ["required", { name: "correctName", fnc: correctName }],
       messages: {
-        correctName: "Should say: i am solidjs",
+        correctName: "Should say: hey i am solidjs",
+      },
+      preprocess: (field, fields, values) => {
+        return field;
       },
     },
   ];
@@ -67,12 +66,12 @@ const CustomValidation: Component = () => {
 
   const fields: IField[] = [
     {
-      type: "input", // required
-      name: "myname", // required
+      type: "input",
+      name: "myname",
       attributes: {
-        type: "text", // default = text, or password, email, number, tel, optional
-        id: "myname", // optional
-        label: "Name", // optional
+        type: "text",
+        id: "myname",
+        label: "Name",
         placeholder: "Tap i am solidjs", // optional
       },
       rules: ["required", { name: "correctName", fnc: correctName }],
