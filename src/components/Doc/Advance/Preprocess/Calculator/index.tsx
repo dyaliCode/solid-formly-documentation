@@ -86,6 +86,7 @@ const fields: IField[] = [
       id: "total",
       type: "number",
       label: "Total = Number A + Number B",
+      disabled: true,
     },
     preprocess: (field: IField, fields: IForm, values: any) => {
       if (values.touched === "number_a" || values.touched === "number_b") {
