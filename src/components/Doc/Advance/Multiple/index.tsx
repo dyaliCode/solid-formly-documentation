@@ -29,7 +29,7 @@ const fieldsA: IField[] = [
 // form sign up
 const form_name_b="formly_b";
 const confirmPassword = async () => {
-  const values = getValues("formly_b");
+  const values = await getValues("formly_b"); // await is required.
 
   if (values) {
     if (values.password != values.confirmPassword) {
@@ -119,10 +119,9 @@ const fieldsA: IField[] = [
 ];
 
 const confirmPassword = async () => {
-  const values = getValues("formly_b");
-
+  const values = await getValues("formly_b");
   if (values) {
-    if (values.password != values.confirmPassword) {
+    if (values.password != values.confirm_password) {
       return false;
     }
   }
@@ -156,7 +155,10 @@ const fieldsB: IField[] = [
       id: "confirm_password",
       placeholder: "Tap your confirm password",
     },
-    rules: [confirmPassword],
+    rules: [{ name: "confirmPassword", fnc: confirmPassword }],
+    messages: {
+      confirmPassword: "Password and confirm password must be same",
+    },
   },
 ];
 
