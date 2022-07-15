@@ -30,7 +30,7 @@ section {
 
 aside {
   details {
-    margin-bottom: calc(var(--spacing) * 1.5);
+    margin-bottom: calc(var(--spacing) * 1);
 
     summary {
       font-weight: bold !important;
@@ -38,7 +38,7 @@ aside {
 
     ul {
       li {
-        margin-top: calc(var(--spacing) * 0.2);
+        margin-top: calc(var(--spacing) * 0);
       }
     }
   }
