@@ -54,16 +54,16 @@ export default Form;
 const CustomValidation: Component = () => {
   const form_name = "custom_validation";
 
-  const correctName = async (): Promise<boolean> => {
-    const values = await getValues(form_name);
+  async function correctName() {
+    const values = getValues(form_name);
     if (values) {
-      if (values.myname != "i am solidjs") {
+      if (values.myname != "hey i am solidjs") {
         return false;
       }
       return true;
     }
     return false;
-  };
+  }
 
   const fields: IField[] = [
     {
@@ -75,9 +75,12 @@ const CustomValidation: Component = () => {
         label: "Name", // optional
         placeholder: "Tap i am solidjs", // optional
       },
-      rules: ["required", correctName],
+      rules: ["required", { name: "correctName", fnc: correctName }],
       messages: {
-        correctName: "Should say: i am solidjs",
+        correctName: "Should say: hey i am solidjs",
+      },
+      preprocess: (field, fields, values) => {
+        return field;
       },
     },
   ];

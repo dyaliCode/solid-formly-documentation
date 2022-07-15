@@ -8,12 +8,14 @@ export default defineConfig({
       adapter: vercel(),
     }),
   ],
-  ssr: {
-    noExternal: ["solid-formly"],
-  },
   build: {
     target: "esnext",
     polyfillDynamicImport: false,
-    outDir: "dist",
+  },
+  resolve: {
+    conditions: ["development", "browser"],
+  },
+  ssr: {
+    noExternal: ["solid-formly"],
   },
 });

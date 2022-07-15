@@ -76,12 +76,12 @@ const Example: Component = () => {
   return (
     <section>
       <h3>Alter Form</h3>
+      <p>
+        <code>
+          <b>Change textes / classes for buttons submit and reset</b>
+        </code>
+      </p>
       <article>
-        <p>
-          <code>
-            <b>Change textes / classes for buttons submit and reset</b>
-          </code>
-        </p>
         <Form fields={fields} form_name="formly_alter" />
       </article>
       <article>

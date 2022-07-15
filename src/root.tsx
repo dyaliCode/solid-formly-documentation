@@ -7,7 +7,6 @@ import createThemeMode from "~/utils/stores";
 import "@picocss/pico/scss/pico.scss";
 import "@picocss/pico/docs/scss/pico.docs.scss";
 import "prismjs/themes/prism-solarizedlight.css";
-
 import "./index.scss";
 
 export default function Root() {
