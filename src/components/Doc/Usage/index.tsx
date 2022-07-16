@@ -32,6 +32,7 @@ const fields: IField[] = [
       id: "password",
       classes: ["form-control"],
       placeholder: "Tap your password",
+      autocomplete: "off",
     },
     rules: ["required", "min:6", "max:10"],
     messages: {
@@ -102,6 +103,7 @@ const fields: IField[] = [
       id: "password",
       classes: ["form-control"],
       placeholder: "Tap your password",
+      autocomplete: "off",
     },
     rules: ["required", "min:6", "max:10"],
     messages: {
