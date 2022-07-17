@@ -144,7 +144,7 @@ const Example: Component = () => {
         label: "Items",
       },
       extra: {},
-      preprocess: async (field: IField, fields: IForm, values: any) => {
+      preprocess: async (field: IField, fields: IField[], values: any) => {
         if (values.touched === "category") {
           setLoading(true);
           field.extra.options =

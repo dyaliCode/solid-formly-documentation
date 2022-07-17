@@ -36,7 +36,7 @@ const fields: IField[] = [
       type: "number",
       label: "Total = Number A + Number B",
     },
-    preprocess: (field: IField, fields: IForm, values: any) => {
+    preprocess: (field: IField, fields: IField[], values: any) => {
       if (values.touched === "number_a" || values.touched === "number_b") {
         field.value = parseInt(values.number_a) + parseInt(values.number_b);
       }
