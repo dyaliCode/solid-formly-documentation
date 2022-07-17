@@ -158,13 +158,8 @@ const Example: Component = () => {
 
   return (
     <>
-      <strong>1- fetch example</strong>
       <article>
-        <p>
-          <code>
-            <b>1- fetch api example</b>
-          </code>
-        </p>
+        <header>2- Fetch api example</header>
         <p>
           <small>
             <i>
