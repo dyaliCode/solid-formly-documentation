@@ -166,11 +166,6 @@ const Multiple: Component = () => {
   return (
     <section>
       <h3>Multiple Form</h3>
-      <p>
-        <code>
-          <b>In one component, you can create a multiple forms</b>
-        </code>
-      </p>
       <article>
         <h4>Sign in</h4>
         <Form fields={fieldsA} form_name="formly_a" />

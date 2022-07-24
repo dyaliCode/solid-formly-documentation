@@ -8,7 +8,7 @@ export default function Alter() {
         <hgroup>
           <h1>Advanced</h1>
           <h2>
-            <i>You can easly get a form more reactive using hook preprocess.</i>
+            <i>In one component, you can create a multiple forms</i>
           </h2>
         </hgroup>
       </section>

@@ -8,7 +8,7 @@ const code = `const fields: IField[] = [
   {
     type: "input", // required
     name: "name-field-range", // required
-    value: 0,
+    value: 50, // default value
     attributes: {
       type: "range", // required
       id: "id-field-range", // required
@@ -26,7 +26,7 @@ const Range: Component = () => {
     {
       type: "input", // required
       name: "name-field-range", // required
-      value: 0,
+      value: 50,
       attributes: {
         type: "range", // required
         id: "id-field-range", // required
