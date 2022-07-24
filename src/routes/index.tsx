@@ -55,7 +55,7 @@ export default function Home() {
                 <h4>Styles</h4>
                 <p>
                   Full control on style form using classes of diffirent
-                  libraries like: bootstrap, tailwindcss ...etc
+                  libraries like bootstrap, tailwindcss, bulma ...etc
                 </p>
               </article>
             </div>

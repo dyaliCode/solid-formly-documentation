@@ -21,10 +21,7 @@ export default function Root() {
 
         <meta property="og:title" content="Solid Formly" />
         <meta property="og:type" content="documentation" />
-        <meta
-          property="og:url"
-          content="https://solid-formly-documentation.vercel.app/"
-        />
+        <meta property="og:url" content="https://solid.formly-js.com" />
         <meta
           property="og:image"
           content="https://assets.solidjs.com/banner?project=Formly&type=package"
